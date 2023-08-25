@@ -1,0 +1,8 @@
+{% extends "users/base.html" %}
+{% block content %}
+    <h1 style="padding: 80px 0 0 20px;">User Detail</h1>
+        <p style="padding: 20px 0 0 40px;"><strong>ID:</strong> {{ user.id }}</p>
+        <p style="padding: 20px 0 0 40px;"><strong>Name:</strong> {{ user.name }}</p>
+        <p style="padding: 20px 0 0 40px;"><strong>Email:</strong> {{ user.email }}</p>
+        <p style="padding: 20px 0 0 40px;"><strong>Role:</strong> {{ user.role }}</p>
+{% endblock content %}

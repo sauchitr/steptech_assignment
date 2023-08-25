@@ -1,0 +1,13 @@
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1 style="padding: 80px 0 0 30px;">New User</h1>
+    <form method="post" style="padding: 30px 0 0 50px;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create User</button>
+    </form>
+
+{% endblock content %}
+
+
